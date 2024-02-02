@@ -1,0 +1,548 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    width: 100vw;
+    height: 60px;
+    background-color: rgb(5, 1, 14);
+    /* border: 1px solid white;........ */
+    position: fixed;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    color: white;
+    align-items: center;
+}
+
+.navbar .nav-left img {
+    align-items: center;
+    width: 55px;
+    height: 55px;
+}
+
+.form-search {
+    position: absolute;
+    right: 190px;
+    top: 18px;
+    width: 185px;
+    height: 25px;
+    /* border: 1px solid red; */
+    background-color: rgb(195, 180, 233);
+}
+
+.nav-bell i {
+    font-size: 28px;
+    position: absolute;
+    right: 115px;
+    top: 18px;
+}
+
+.profile-logo img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    right: 0;
+    top: 0px;
+    position: absolute;
+}
+
+.container {
+    background-color: rgb(10, 0, 20);
+    /* border: 1px solid white;.........  */
+}
+
+.section {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+img,i{
+    cursor: pointer;
+}
+
+/* left section=========== */
+.left-side {
+    margin-top: 50px;
+    margin-left: 20px;
+    width: 68vw;
+    height: 100%;
+    /* border: 1px solid white;...... */
+    overflow-y: scroll;
+}
+
+.left-side-box {
+    margin-top: 40px;
+    display: flex;
+    /* height: 100%; */
+}
+
+.box {
+    width: 280px;
+    height: 280px;
+    /* border: 1px solid white;...........  */
+    transition-duration: 200ms;
+    transition-timing-function: linear;
+    margin: 10px;
+}
+
+.box:hover {
+    transform: scale(1.1)
+}
+
+.box img {
+    width: 280px;
+    height: 280px;
+}
+
+
+/* latest release */
+h1 {
+    color: white;
+    margin-top: 40px;
+    margin-bottom: 5px;
+}
+
+/* .latest-release{
+    position: relative;
+} */
+
+.latest-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* grid-template-rows: 1fr 1fr 1fr; */
+}
+
+.latest-box {
+    width: 440px;
+    height: 115px;
+    margin-top: 20px;
+    /* border: 1px solid white;.........  */
+    position: relative;
+}
+
+.latest-box .text-1 {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    left: 125px;
+    margin: 20px auto;
+    top: 20px;
+}
+
+.latest-box .text-2 {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    right: 10px;
+    margin: 20px auto;
+    top: 20px;
+}
+
+.latest-box .icon img {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    /* transform: scale(0); */
+
+}
+
+.icon img:hover {
+    z-index: 1000;
+    position: absolute;
+    /* z-index: 1; */
+    top: 40px;
+    left: 40px;
+    width: 30px;
+    height: 30px;
+    transform: scale(1.2);
+}
+
+.latest-box img {
+    width: 115px;
+    height: 115px;
+    cursor: pointer;
+}
+
+.artist {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+}
+
+.artist-1 {
+    /* border: 1px solid white; */
+    position: relative;
+    color: white;
+    text-align: center;
+    margin: 10px;
+}
+
+.artist-1 img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.artist-A-2 {
+    margin-top: 25px;
+    display: flex;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    background-color: rgb(8, 1, 27);
+}
+
+.artist-2 {
+    width: 100px;
+    height: 100px;
+    /* border: 1px solid white;............. */
+    position: relative;
+}
+
+.artist-2 span {
+    position: absolute;
+    color: white;
+    top: 40px;
+    left: 33px;
+    font-style: italic;
+    font-size: 15px;
+    align-items: center;
+}
+
+.artist-2 img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 10px;
+    opacity: 60%;
+}
+
+.english {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+}
+
+.english-1 {
+    width: 160px;
+    height: 200px;
+    /* border: 1px solid white;........  */
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin: 8px;
+}
+
+.english-1 img {
+    width: 155px;
+    height: 155px;
+}
+
+.hindi {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: flex;
+}
+
+.hindi-1 {
+    width: 160px;
+    height: 220px;
+    /* border: 1px solid white;.................... */
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin: 8px;
+}
+
+.hindi-1 img {
+    width: 155px;
+    height: 155px;
+}
+
+
+.right-side {
+    width: 32vw;
+    height: 100%;
+    /* border: 1px solid white;.....  */
+    position: fixed;
+    top: 61px;
+    left: 68vw;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    z-index: 1000;
+    background-color: rgb(13, 1, 24);
+
+}
+
+.right-side1 {
+    margin-top: 65px;
+    /* height: 100%;
+    width: 100%; */
+    margin-bottom: 100px;
+}
+
+.right-top-queue {
+    width: 100%;
+    height: 50px;
+    z-index: 1000;
+    /* border-top: 1px solid white;...........  */
+    padding-bottom: 5px;
+    background-color: rgb(5, 1, 14);
+    position: fixed;
+    top: 60px;
+}
+
+.right-top-queue p {
+    color: white;
+    font-size: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+
+
+.queue-1 {
+    /* border: 1px solid white;.......  */
+    margin-top: 15px;
+    position: relative;
+}
+
+.queue-text-num {
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 15px;
+}
+
+.queue-text {
+    color: white;
+    position: absolute;
+    top: 30px;
+    left: 160px;
+    font-style: italic;
+}
+
+.queue-icon i {
+    position: absolute;
+    font-size: 15px;
+    top: 25px;
+    right: 30px;
+}
+
+.queue-1 img {
+    width: 80px;
+    height: 80px;
+    margin-left: 60px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+#queue-dropdown {
+    background-color: rgb(20, 156, 138);
+    width: 65px;
+    height: 30px;
+    border-radius: 10px;
+    margin-left: 340px;
+    position: absolute;
+    bottom: -5px;
+}
+
+@media only screen and (min-width:720px) and (max-width: 1150px) {
+    .box {
+        width: 220px;
+        height: 220px;
+    }
+
+    .box img {
+        width: 220px;
+        height: 220px;
+    }
+
+    .latest-box {
+        width: 350px;
+        height: 100px;
+    }
+
+    .latest-box img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .latest-box .text-1 {
+        font-size: 14px;
+        left: 95px;
+    }
+
+    .latest-box .icon img {
+        top: 32px;
+        left: 32px;
+    }
+
+    h1 {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 3px;
+    }
+
+    .artist-1 img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .english-1 {
+        width: 120px;
+        height: 160px;
+        font-size: 12px;
+
+    }
+
+    .english-1 img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hindi-1 {
+        width: 120px;
+        height: 160px;
+        font-size: 12px;
+    }
+
+    .hindi-1 img {
+        width: 120px;
+        height: 120px;
+    }
+
+    #queue-dropdown {
+        margin-left: 250px;
+    }
+
+}
+
+@media (max-width:850px) {
+    nav {
+        height: 130px;
+    }
+
+    .form-search {
+        margin-top: 60px;
+        margin-right: 150px;
+    }
+
+    .profile-logo img {
+        margin-top: 60px;
+        margin-right: 150px;
+    }
+
+    .nav-bell i {
+        margin-top: 60px;
+        margin-right: 150px;
+    }
+
+    .left-side {
+        margin-top: 100px;
+    }
+
+    .box {
+        width: 150px;
+        height: 150px;
+    }
+
+    .box img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .latest-box {
+        width: 260px;
+        height: 90px;
+    }
+
+    .latest-box img {
+        width: 90px;
+        height: 90px;
+    }
+
+    .latest-box .text-1 {
+        font-size: 14px;
+        left: 95px;
+    }
+
+    .latest-box .icon img {
+        top: 30px;
+        left: 30px;
+    }
+
+    h1 {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 3px;
+    }
+
+    .artist-1 img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .english-1 {
+        width: 120px;
+        height: 160px;
+        font-size: 12px;
+
+    }
+
+    .english-1 img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .hindi-1 {
+        width: 120px;
+        height: 160px;
+        font-size: 12px;
+    }
+
+    .hindi-1 img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .right-side {
+        margin-top: 65px;
+    }
+
+    .right-top-queue {
+        margin-top: 60px;
+    }
+
+    #queue-dropdown {
+        margin-left: 150px;
+    }
+
+    .queue-text {
+        left: 120px;
+    }
+
+    .queue-1 img {
+        margin-left: 35px;
+    }
+
+    .queue-icon i {
+        right: 10px;
+    }
+
+}
+

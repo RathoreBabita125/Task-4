@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Spotify-Clone</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/3a1294db06.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- starting of navbar... -->
+
+  <nav>
+    <div class="navbar">
+      <div class="nav-left">
+        <img src="./Assets/Icon-Img/spotify2.png" alt="" />
+      </div>
+
+      <h1 id="spotify" style="margin: 10px">Spotify</h1>
+      <h3 id="fav" style="margin-left: 50px">Favourites</h3>
+
+
+      <div class="nav-right">
+        <form action="#">
+          <!-- <span class="fas fa-search" ></span> -->
+          <div class="form-search">
+            <button type="submit" style="
+                  margin-top: 3px;
+                  font-size: 18px;
+                  background-color: rgb(195, 180, 233);
+                  border: none;
+                  margin-left: 6px;
+                ">
+              <span class="fas fa-search" aria-hidden="true"></span>
+            </button>
+
+            <input type="text" name="search" id="" placeholder="Search..." style="
+                  font-size: 15px;
+                  margin-left: 2px;
+                  width: 90px;
+                  padding: 2px;
+                  background-color: rgb(195, 180, 233);
+                  color: black;
+                  border: none;
+                " />
+
+            <button type="submit" style=" 
+                background-color: rgb(195, 180, 233);
+                margin-left: 38px; 
+                border: none;
+                margin-top: 3px;
+                font-size: 18px;
+
+                ">
+              <!-- <i class="fa-solid fa-microphone" aria-hidden="true" ></i> -->
+              <i class="fa-solid fa-microphone"></i>
+            </button>
+          </div>
+
+
+          <div class="nav-bell">
+            <i class="fa-regular fa-bell"></i>
+          </div>
+
+          <div class="profile-logo">
+            <img src="./Assets/Icon-Img/B_Photo.jpg" alt="" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ending of navbar... -->
+
+  <!-- stating of main body -->
+  <div class="container">
+    <div class="section">
+      <div class="left-side">
+        <div class="left-side-box">
+          <div class="box" id="top-box-1">
+            <img src="./Assets/Top-Box-Img/M4.jpg" alt="" />
+          </div>
+          <div class="box" id="top-box-2">
+            <img src="./Assets/Top-Box-Img/S1.jpg" alt="" />
+          </div>
+          <div class="box" id="top-box-3">
+            <img src="./Assets/Top-Box-Img/Party2.jpg" alt="" />
+          </div>
+        </div>
+
+        <!-- Latest Release............... -->
+        <h1>Release Latest</h1>
+        <div class="latest-release">
+          <div class="latest">
+            <div class="latest-1">
+              <div class="latest-box" id="latest-box1">
+                <img src="./Assets/Latest Release/LM9.jpg" alt="" />
+                <!-- <i class="fa-solid fa-play" style="color: #ffffff;"></i> -->
+                <div class="icon">
+                  <img src="./Assets/Icon-Img/Play-icon.png" alt="" class="icon">
+                </div>
+                <div class="text-1">
+                  <div>Royal Fortuna</div>
+                  <div>Mar 12, 2012</div>
+                </div>
+                <div class="text-2">
+                  <div>...</div>
+                  <div>5:00</div>
+                </div>
+              </div>
+
+              <div class="latest-box" id="latest-box2">
+                <img src="./Assets/Queue/Q9.jpg" alt="" />
+                <!-- <i class="fa-solid fa-play" style="color: #ffffff;"></i> -->
+                <div class="icon">
+                  <img src="./Assets/Icon-Img/Play-icon.png" alt="" class="icon">
+                </div>
+                <div class="text-1">
+                  <div>The Tomorrow Job</div>
+                  <div>Nov 12, 2000</div>
+                </div>
+                <div class="text-2">
+                  <div>...</div>
+                  <div>5:00</div>
+                </div>
+              </div>
+              <div class="latest-box" id="latest-box3">
+                <img src="./Assets/Latest Release/LM4.jpg" alt="" />
+                <!-- <i class="fa-solid fa-play" style="color: #ffffff;"></i> -->
+                <div class="icon">
+                  <img src="./Assets/Icon-Img/Play-icon.png" alt="" class="icon">
+                </div>
+                <div class="text-1">
+                  <div>Lootera</div>
+                  <div>Mar 12, 2017</div>
+                </div>
+                <div class="text-2">
+                  <div>...</div>
+                  <div>5:00</div>
+                </div>
+              </div>
+              <div class="latest-box" id="latest-box4">
+                <img src="./Assets/Latest Release/LM1.jpg" alt="" />
+                <!-- <i class="fa-solid fa-play" style="color: #ffffff;"></i> -->
+                <div class="icon">
+                  <img src="./Assets/Icon-Img/Play-icon.png" alt="" class="icon">
+                </div>
+                <div class="text-1">
+                  <div>Adipurush</div>
+                  <div>Jun 12, 2023</div>
+                </div>
+                <div class="text-2">
+                  <div>...</div>
+                  <div>5:00</div>
+                </div>
+              </div>
+              <div class="latest-box" id="latest-box5">
+                <img src="./Assets/Latest Release/LM3.jpg" alt="" />
+                <!-- <i class="fa-solid fa-play" style="color: #ffffff;"></i> -->
+                <div class="icon">
+                  <img src="./Assets/Icon-Img/Play-icon.png" alt="" class="icon">
+                </div>
+                <div class="text-1">
+                  <div>Puaada</div>
+                  <div>Aug 08, 2002</div>
+                </div>
+                <div class="text-2">
+                  <div>...</div>
+                  <div>5:00</div>
+                </div>
+              </div>
+              <div class="latest-box" id="latest-box6">
+                <img src="./Assets/Latest Release/LM10.jpg" alt="" />
+                <!-- <i class="fa-solid fa-play" style="color: #ffffff;"></i> -->
+                <div class="icon">
+                  <img src="./Assets/Icon-Img/Play-icon.png" alt="" class="icon">
+                </div>
+                <div class="text-1">
+                  <div>Hunt 25</div>
+                  <div>May 2, 2011</div>
+                </div>
+                <div class="text-2">
+                  <div>...</div>
+                  <div>5:00</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <h1>Popular Artist</h1>
+        <div class="popular-artist">
+          <div class="artist">
+            <div class="artist-1">
+              <img src="./Assets/Popular Artists/A1.png" alt="" />
+              <span>Elton John</span>
+            </div>
+            <div class="artist-1">
+              <img src="./Assets/Popular Artists/A18.jpg" alt="" />
+              <span>Kety Perry</span>
+            </div>
+            <div class="artist-1">
+              <img src="./Assets/Popular Artists/A3.jpeg" alt="" />
+              <span>Prince Kumar</span>
+            </div>
+            <div class="artist-1">
+              <img src="./Assets/Popular Artists/A4.jpg" alt="" />
+              <span>Beyounce </span>
+            </div>
+            <div class="artist-1">
+              <img src="./Assets/Popular Artists/A5.jpg" alt="" />
+              <span>Arijit Singh</span>
+            </div>
+            <div class="artist-1">
+              <img src="./Assets/Popular Artists/A6.jpg" alt="" />
+              <span>Ariana Grande </span>
+            </div>
+            <div class="artist-1">
+              <img src="./Assets/Popular Artists/A19.jpg" alt="" />
+              <span>Rihanna</span>
+            </div>
+            <div class="artist-1">
+              <img src="./Assets/Popular Artists/A8.jpg" alt="" />
+              <span>Asha Bhosle</span>
+            </div>
+            <div class="artist-1">
+              <img src="./Assets/Popular Artists/A9.jpg" alt="" />
+              <span>Aretha Roy</span>
+            </div>
+            <div class="artist-1">
+              <img src="./Assets/Popular Artists/A10.jpg" alt="" />
+              <span>Alicia keys</span>
+            </div>
+            <div class="artist-1">
+              <img src="./Assets/Popular Artists/A111.webp" alt="" />
+              <span>Celine Dion</span>
+            </div>
+            <div class="artist-1">
+              <img src="./Assets/Popular Artists/A12.jpg" alt="" />
+              <span>Meley Cyrus</span>
+            </div>
+            <div class="artist-1">
+              <img src="./Assets/Popular Artists/A13.jpg" alt="" />
+              <span>Shakira Goyal</span>
+            </div>
+            <div class="artist-1">
+              <img src="./Assets/Popular Artists/A14.jpg" alt="" />
+              <span>Mariah Carey</span>
+            </div>
+            <div class="artist-1">
+              <img src="./Assets/Popular Artists/A15.png" alt="" />
+              <span>Adele Vedi</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="popular-artist-1">
+          <div class="artist-A-2">
+            <div class="artist-2">
+              <img src="./Assets/Artist_nature/N1.jpg" alt="" />
+              <span>Live</span>
+            </div>
+            <div class="artist-2">
+              <img src="./Assets/Artist_nature/N2.jpg" alt="" />
+              <span>Love</span>
+            </div>
+            <div class="artist-2">
+              <img src="./Assets/Artist_nature/N3.jpg" alt="" />
+              <span>Life</span>
+            </div>
+            <div class="artist-2">
+              <img src="./Assets/Artist_nature/N4_1.jpg" alt="" />
+              <span>Peace</span>
+            </div>
+            <div class="artist-2">
+              <img src="./Assets/Artist_nature/N5.jpg" alt="" />
+              <span>Nature</span>
+            </div>
+            <div class="artist-2">
+              <img src="./Assets/Artist_nature/N6.jpg" alt="" />
+              <span>cool</span>
+            </div>
+            <div class="artist-2">
+              <img src="./Assets/Artist_nature/N7.jpg" alt="" />
+              <span>shine</span>
+            </div>
+            <div class="artist-2">
+              <img src="./Assets/Artist_nature/N8.jpg" alt="" />
+              <span>Happy</span>
+            </div>
+            <div class="artist-2">
+              <img src="./Assets/Artist_nature/N9.jpg" alt="" />
+              <span>Enjoy</span>
+            </div>
+            <div class="artist-2">
+              <img src="./Assets/Artist_nature/N10.jpg" alt="" />
+              <span>Laugh</span>
+            </div>
+            <div class="artist-2">
+              <img src="./Assets/Artist_nature/N11.jpg" alt="" />
+              <span>Hope</span>
+            </div>
+            <div class="artist-2">
+              <img src="./Assets/Artist_nature/N12.jpg" alt="" />
+              <span>Sun</span>
+            </div>
+            <div class="artist-2">
+              <img src="./Assets/Artist_nature/N13.jpg" alt="" />
+              <span>wish</span>
+            </div>
+            <div class="artist-2">
+              <img src="./Assets/Artist_nature/N14.webp" alt="" />
+              <span>Bridge</span>
+            </div>
+            <div class="artist-2">
+              <img src="./Assets/Artist_nature/N15.jpg" alt="" />
+              <span>River</span>
+            </div>
+            <div class="artist-2">
+              <img src="./Assets/Artist_nature/N16.jpg" alt="" />
+              <span>Water</span>
+            </div>
+            <div class="artist-2">
+              <img src="./Assets/Artist_nature/N17.jpeg" alt="" />
+              <span>Moon</span>
+            </div>
+            <div class="artist-2">
+              <img src="./Assets/Artist_nature/N12.jpg" alt="" />
+              <span>light</span>
+            </div>
+          </div>
+        </div>
+
+        <h1>Latest English</h1>
+        <div class="latest-english">
+          <div class="english">
+            <div class="english-1">
+              <img src="./Assets/Latest English/E1.jpg" alt="" />
+              <h3>Adam Driver</h3>
+              <p>Jan 2, 2022</p>
+            </div>
+            <div class="english-1">
+              <img src="./Assets/Latest English/E2.jpg" alt="" />
+              <h3>June</h3>
+              <p>Mar 12, 2011</p>
+            </div>
+            <div class="english-1">
+              <img src="./Assets/Latest English/E15.jpg" alt="" />
+              <h3>Beauty and Beast</h3>
+              <p>Jan 2, 2001</p>
+            </div>
+            <div class="english-1">
+              <img src="./Assets/Latest English/E4.jpg" alt="" />
+              <h3>No Hard Feeling</h3>
+              <p>Feb 2, 2021</p>
+            </div>
+            <div class="english-1">
+              <img src="./Assets/Latest English/E5.jpg" alt="" />
+              <h3>HollyWood Nostalgia</h3>
+              <p>Aug 2, 2000</p>
+            </div>
+            <div class="english-1">
+              <img src="./Assets/Latest English/E6.jpg" alt="" />
+              <h3>Beauty and Breast</h3>
+              <p>Jan 2, 2002</p>
+            </div>
+            <div class="english-1">
+              <img src="./Assets/Latest English/E7.jpg" alt="" />
+              <h3>Adam Driver</h3>
+              <p>Jan 2, 2022</p>
+            </div>
+            <div class="english-1">
+              <img src="./Assets/Latest English/E8.jpg" alt="" />
+              <h3>Business Talk</h3>
+              <p>Jan 2, 2012</p>
+            </div>
+            <div class="english-1">
+              <img src="./Assets/Latest English/E9.jpg" alt="" />
+              <h3>Gold Singer</h3>
+              <p>Apr 2, 2009</p>
+            </div>
+            <div class="english-1">
+              <img src="./Assets/Latest English/E10.jpg" alt="" />
+              <h3>Adam Driver</h3>
+              <p>Dec 2, 2000</p>
+            </div>
+            <div class="english-1">
+              <img src="./Assets/Latest English/E11.jpg" alt="" />
+              <h3>Adam Driver</h3>
+              <p>Jan 2, 2022</p>
+            </div>
+            <div class="english-1">
+              <img src="./Assets/Latest English/E12.jpg" alt="" />
+              <h3>The Tomorrow Job</h3>
+              <p>Jan 2, 2022</p>
+            </div>
+            <div class="english-1">
+              <img src="./Assets/Latest English/E13.jpg" alt="" />
+              <h3>Official Trailer</h3>
+              <p>May 2, 1999</p>
+            </div>
+            <div class="english-1">
+              <img src="./Assets/Latest English/E14.png" alt="" />
+              <h3>Bettle E Bete</h3>
+              <p>Nov 2, 2010</p>
+            </div>
+            <div class="english-1">
+              <img src="./Assets/Latest English/E3.jpg" alt="" />
+              <h3>June</h3>
+              <p>Jan 2, 2022</p>
+            </div>
+          </div>
+        </div>
+
+        <h1>Latest Hindi</h1>
+        <div class="lastest-hindi">
+          <div class="hindi">
+            <div class="hindi-1">
+              <img src="./Assets/Latest Hindi/H1.jpg" alt="" />
+              <h3>RRR</h3>
+              <p>Jan 2, 2022</p>
+            </div>
+            <div class="hindi-1">
+              <img src="./Assets/Latest Hindi/H2.jpg" alt="" />
+              <h3>Galliyan</h3>
+              <p>Mar 2, 2017</p>
+            </div>
+            <div class="hindi-1">
+              <img src="./Assets/Latest Hindi/H15.jpg" alt="" />
+              <h3>Blind</h3>
+              <p>Jul 2, 2021</p>
+            </div>
+            <div class="hindi-1">
+              <img src="./Assets/Latest Hindi/H14.jpg" alt="" />
+              <h3>Animal</h3>
+              <p>Jan 2, 2022</p>
+            </div>
+            <div class="hindi-1">
+              <img src="./Assets/Latest Hindi/H13.jpg" alt="" />
+              <h3>Akira</h3>
+              <p>Jan 2, 2001</p>
+            </div>
+            <div class="hindi-1">
+              <img src="./Assets/Latest Hindi/H12.jpg" alt="" />
+              <h3>CuttPutlli</h3>
+              <p>Mar 2, 2009</p>
+            </div>
+            <div class="hindi-1">
+              <img src="./Assets/Latest Hindi/H11.jpg" alt="" />
+              <h3>Adipurush</h3>
+              <p>Jan 2, 2023</p>
+            </div>
+            <div class="hindi-1">
+              <img src="./Assets/Latest Hindi/H8.jpg" alt="" />
+              <h3>Dark Chocolate</h3>
+              <p>Jan 2, 2022</p>
+            </div>
+            <div class="hindi-1">
+              <img src="./Assets/Latest Hindi/H9.jpg" alt="" />
+              <h3>Selfiee</h3>
+              <p>Jan 2, 2001</p>
+            </div>
+            <div class="hindi-1">
+              <img src="./Assets/Latest Hindi/H10.jpg" alt="" />
+              <h3>GasLight</h3>
+              <p>Jan 2, 2022</p>
+            </div>
+            <div class="hindi-1">
+              <img src="./Assets/Latest Hindi/H7.jpeg" alt="" />
+              <h3>Adam Driver</h3>
+              <p>Jan 2, 2022</p>
+            </div>
+            <div class="hindi-1">
+              <img src="./Assets/Latest Hindi/H6.jpg" alt="" />
+              <h3>padmavati</h3>
+              <p>Jan 2, 2022</p>
+            </div>
+            <div class="hindi-1">
+              <img src="./Assets/Latest Hindi/H5.jpg" alt="" />
+              <h3>Padmavati</h3>
+              <p>Jan 2, 2022</p>
+            </div>
+            <div class="hindi-1">
+              <img src="./Assets/Latest Hindi/H4.jpg" alt="" />
+              <h3>Adam Driver</h3>
+              <p>Jan 2, 2022</p>
+            </div>
+            <div class="hindi-1">
+              <img src="./Assets/Latest Hindi/H3.jpeg" alt="" />
+              <h3>Adam Driver</h3>
+              <p>Jan 2, 2022</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- right section -->
+
+      <div class="right-side">
+
+        <div class="right-top-queue">
+          <p>Queue</p>
+
+          <div class="dropdown">
+            <select name="Queue" id="queue-dropdown">
+              <div id="select-queue">
+                <option value="Queue">Queue</option>
+                <option value="Fortuna">Royal Fortuna</option>
+                <option value="Puaada">Puaada</option>
+                <option value="Adipurush">Adipurush</option>
+                <option value="Lootera">Lootera</option>
+              </div>
+            </select>
+          </div>
+
+        </div>
+
+        <div class="right-side1">
+          <div class="queue">
+            <div class="queue-1">
+              <div class="queue-text-num">01</div>
+              <img src="./Assets/Queue/Q1.jpg" alt="" />
+              <div class="queue-text">Puaada ...</div>
+
+              <div class="queue-icon">
+                <i class="fa-solid fa-heart" style="color: #fbf3fb;"></i>
+              </div>
+
+            </div>
+            <div class="queue-1">
+              <div class="queue-text-num">02</div>
+              <img src="./Assets/Queue/Q2.jpg" alt="" />
+              <div class="queue-text">Thank ...</div>
+
+              <div class="queue-icon">
+                <i class="fa-solid fa-heart" style="color: #fbf3fb;"></i>
+              </div>
+            </div>
+            <div class="queue-1">
+              <div class="queue-text-num">03</div>
+              <img src="./Assets/Queue/Q3.jpg" alt="" />
+              <div class="queue-text">War ...</div>
+              <div class="queue-icon">
+                <i class="fa-solid fa-heart" style="color: #fbf3fb;"></i>
+              </div>
+            </div>
+            <div class="queue-1">
+              <div class="queue-text-num">04</div>
+              <img src="./Assets/Queue/Q4.jpg" alt="" />
+              <div class="queue-text">Music ...</div>
+              <div class="queue-icon">
+                <i class="fa-solid fa-heart" style="color: #fbf3fb;"></i>
+              </div>
+            </div>
+            <div class="queue-1">
+              <div class="queue-text-num">05</div>
+              <img src="./Assets/Queue/Q5.jpg" alt="" />
+              <div class="queue-text">Morning ...</div>
+              <div class="queue-icon">
+                <i class="fa-solid fa-heart" style="color: #fbf3fb;"></i>
+              </div>
+            </div>
+            <div class="queue-1">
+              <div class="queue-text-num">06</div>
+              <img src="./Assets/Queue/Q6.jpg" alt="" />
+              <div class="queue-text">Song ...</div>
+              <div class="queue-icon">
+                <i class="fa-solid fa-heart" style="color: #fbf3fb;"></i>
+              </div>
+            </div>
+            <div class="queue-1">
+              <div class="queue-text-num">07</div>
+              <img src="./Assets/Queue/Q7.jpg" alt="" />
+              <div class="queue-text">Book ...</div>
+              <div class="queue-icon">
+                <i class="fa-solid fa-heart" style="color: #fbf3fb;"></i>
+              </div>
+            </div>
+            <div class="queue-1">
+              <div class="queue-text-num">08</div>
+              <img src="./Assets/Queue/Q8.png" alt="" />
+              <div class="queue-text">Lost ...</div>
+              <div class="queue-icon">
+                <i class="fa-solid fa-heart" style="color: #fbf3fb;"></i>
+              </div>
+            </div>
+            <div class="queue-1">
+              <div class="queue-text-num">09</div>
+              <img src="./Assets/Queue/Q9.jpg" alt="" />
+              <div class="queue-text">Tom ...</div>
+              <div class="queue-icon">
+                <i class="fa-solid fa-heart" style="color: #fbf3fb;"></i>
+              </div>
+            </div>
+            <div class="queue-1">
+              <div class="queue-text-num">10</div>
+              <img src="./Assets/Queue/Q10.jpg" alt="" />
+              <div class="queue-text">Notice ...</div>
+              <div class="queue-icon">
+                <i class="fa-solid fa-heart" style="color: #fbf3fb;"></i>
+              </div>
+            </div>
+            <div class="queue-1">
+              <div class="queue-text-num">11</div>
+              <img src="./Assets/Queue/Q11.png" alt="" />
+              <div class="queue-text">Bet ... </div>
+              <div class="queue-icon">
+                <i class="fa-solid fa-heart" style="color: #fbf3fb;"></i>
+              </div>
+            </div>
+            <div class="queue-1">
+              <div class="queue-text-num">12</div>
+              <img src="./Assets/Queue/Q12.jpg" alt="" />
+              <div class="queue-text">Beauty ...</div>
+              <div class="queue-icon">
+                <i class="fa-solid fa-heart" style="color: #fbf3fb;"></i>
+              </div>
+            </div>
+            <div class="queue-1">
+              <div class="queue-text-num">13</div>
+              <img src="./Assets/Queue/Q13.jpg" alt="" />
+              <div class="queue-text">Akira ...</div>
+              <div class="queue-icon">
+                <i class="fa-solid fa-heart" style="color: #fbf3fb;"></i>
+              </div>
+            </div>
+            <div class="queue-1">
+              <div class="queue-text-num">14</div>
+              <img src="./Assets/Latest English/E15.jpg" alt="" />
+              <div class="queue-text">Shine ...</div>
+              <div class="queue-icon">
+                <i class="fa-solid fa-heart" style="color: #fbf3fb;"></i>
+              </div>
+            </div>
+            <div class="queue-1">
+              <div class="queue-text-num">15</div>
+              <img src="./Assets/Queue/Q15.jpg" alt="" />
+              <div class="queue-text">Mood ...</div>
+              <div class="queue-icon">
+                <i class="fa-solid fa-heart" style="color: #fbf3fb;"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
